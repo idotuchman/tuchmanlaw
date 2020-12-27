@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Law Office of Ido Tuchman</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
-  <link rel="stylesheet" href="./css/utils.css">
   <link rel="stylesheet" href="./css/styles.css">
 </head>
 
@@ -13,17 +12,20 @@
   <header class="header bg-light">
     <nav>
       <a href="#home"><img class="logo" src="./images/logo.png" alt="TuchmanLaw"></a>
-      <div class="main-nav">
-        <div>              
-          <a class="menu contact-bar" href="tel:760-916-1994" target="_self"><i class="fas fa-phone-alt"></i>760-916-1994</a>              
-          <a class="menu contact-bar" href="mailto: info@tuchmanlaw.com"><i class="fas fa-envelope"></i>info@tuchmanlaw.com</a>
+      <div class="hamburger" onclick="hamburgerMenuClicked()"><i class="hamburger fas fa-bars" ></i></div>
+      <div id="main-nav" class="main-nav">
+        <div class="contact-bar">  
+          <ul>
+            <li><a href="tel:760-916-1994" target="_self"><i class="fas fa-phone-alt"></i>760-916-1994</a></li>
+            <li><a href="mailto: info@tuchmanlaw.com"><i class="fas fa-envelope"></i>info@tuchmanlaw.com</a></li>
+          </ul>
         </div>
         <ul class="main-menu">
-          <li><a class="menu" href="#home">Home</a></li>
-          <li><a class="menu" href="#about">About</a></li>
-          <li><a class="menu" href="#practice">Practice Areas</a></li>
-          <li><a class="menu" href="#connect">Contact</a></li>
-          <li><a class="menu" href="#blog">Blog</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#practice">Practice Areas</a></li>
+          <li><a href="#connect">Contact</a></li>
+          <li><a href="#blog">Blog</a></li>
         </ul>
       </div>
     </nav>    

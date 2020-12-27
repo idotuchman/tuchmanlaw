@@ -18,23 +18,17 @@ window.addEventListener('mousemove', function(e){
 });
 
 
+// Toggle drop menu when hamburger icon clicked
+function hamburgerMenuClicked() {
+  document.getElementById("main-nav").classList.toggle("show");
+}
 
-
-// document.getElementById('about').addEventListener(
-//     'scroll',
-//     function()
-//     {
-//       console.log('hello there');
-//         var scrollTop = document.getElementById('about').scrollTop;
-//         var scrollHeight = document.getElementById('about').scrollHeight; // added
-//         var offsetHeight = document.getElementById('about').offsetHeight;
-//         // var clientHeight = document.getElementById('box').clientHeight;
-//         var contentHeight = scrollHeight - offsetHeight; // added
-//         if (contentHeight <= scrollTop) // modified
-//         {
-//             // Now this is called when scroll end!
-//             console.log('hello there');
-//         }
-//     },
-//     false
-// )
+// Hide drop menu if user clicks away from hamburger
+window.onclick = function(event) {
+  if (!event.target.matches('.hamburger')) {
+    let menu = document.getElementById("main-nav");
+    if (menu.classList.contains('show')) {
+      menu.classList.remove('show');
+    }
+  }
+}
