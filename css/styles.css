@@ -127,10 +127,18 @@ img.logo {
   display: none;
 }
 
+.contact-bar {
+  width: 480px;
+}
+
+.main-menu {
+  width: 480px;
+}
+
 nav ul {
   display: flex;
   list-style: none;
-  justify-content: flex-end;
+  justify-content: space-between;
   margin-top: 10px;
 }
 
@@ -425,6 +433,12 @@ textarea:focus {
   .main-nav li {
     padding: 0;
   }
+
+  .main-nav a {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--clr-text-dark);
+  }
     
   /* HOME SECTION */  
   .home {
@@ -441,20 +455,23 @@ textarea:focus {
 
   /* PRACTICE SECTION */
   .practice-area {
-    flex-direction: column;
-    margin: 0;
+    margin-bottom: 1.2rem;
   }
 
   .practice-area img {
-    margin: 10px 0;
+    margin: 0 10px 0 0;
+    width: 50px;
+    height: 50px;
   }
 
   .practice-title {
     font-size: 1.2rem;
+    margin-bottom: 0;
   }
 
   .practice-info {
-    font-size: 1rem;
+    font-size: 0.8rem;
+    margin: 0;
   }
 
 
