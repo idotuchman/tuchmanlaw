@@ -154,12 +154,16 @@ nav ul li {
 }
 
 .main-nav a:hover {
-  color: var(--clr-accent);
-  border-bottom: 2px solid var(--clr-accent);
+  color: var(--clr-text-dark);
+  border-bottom: 2px solid var(--clr-text-dark);
 }
 
 .main-nav .contact-bar a {
   color: var(--clr-accent);
+}
+
+.main-nav .contact-bar a:hover {
+  color: var(--clr-text-dark);
 }
 
 .contact-bar i {
@@ -169,6 +173,7 @@ nav ul li {
 /* HOME SECTION */
 .home {
   height: 100vh;
+  min-height: 500px;
 }
 
 .slogan {
@@ -472,8 +477,6 @@ textarea:focus {
     font-size: 0.8rem;
     margin: 0;
   }
-
-
 }
 
 
@@ -487,6 +490,7 @@ textarea:focus {
   color: var(--clr-text-light);
   background-color: var(--clr-bg-dark);
 }
+
 .bg-light {
   color: var(--clr-text-dark);
   background-color: var(--clr-bg-light);
